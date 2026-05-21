@@ -37,7 +37,7 @@ const estatisticas = {
   totalPrestadores: 523,
   prestadoresPendentes: 12,
   totalUsuarios: 10847,
-  avaliacoesHoje: 34,
+  avaliaçõesHoje: 34,
   ocorrenciasAbertas: 8,
 }
 
@@ -54,14 +54,14 @@ const usuariosRecentes = [
   { id: 4, nome: "Roberto Lima", email: "roberto@email.com", dataCadastro: "18/01/2026", status: "bloqueado" },
 ]
 
-const avaliacoesRecentes = [
+const avaliaçõesRecentes = [
   { id: 1, prestador: "Doces da Maria", usuario: "Ana Paula", nota: 5, comentario: "Excelente qualidade!", data: "21/01/2026", status: "aprovada" },
   { id: 2, prestador: "Marmitas Fit", usuario: "Carlos", nota: 4, comentario: "Bom custo-beneficio", data: "21/01/2026", status: "aprovada" },
   { id: 3, prestador: "Salgados da Ana", usuario: "Maria", nota: 2, comentario: "Entrega atrasada", data: "20/01/2026", status: "pendente" },
 ]
 
 const ocorrencias = [
-  { id: 1, tipo: "Reclamacao", prestador: "Lanches do Ze", usuario: "Pedro Santos", descricao: "Produto entregue diferente do pedido", data: "21/01/2026", status: "aberta" },
+  { id: 1, tipo: "Reclamação", prestador: "Lanches do Ze", usuario: "Pedro Santos", descricao: "Produto entregue diferente do pedido", data: "21/01/2026", status: "aberta" },
   { id: 2, tipo: "Denuncia", prestador: "Cafe Artesanal", usuario: "Julia Mendes", descricao: "Suspeita de perfil falso", data: "20/01/2026", status: "em analise" },
 ]
 
@@ -120,9 +120,9 @@ export default function AdminPage() {
           Usuarios
         </button>
         <button
-          onClick={() => { setActiveTab("avaliacoes"); setSidebarOpen(false) }}
+          onClick={() => { setActiveTab("avaliações"); setSidebarOpen(false) }}
           className={`flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
-            activeTab === "avaliacoes" 
+            activeTab === "avaliações" 
               ? "bg-sidebar-accent text-sidebar-accent-foreground" 
               : "text-sidebar-foreground hover:bg-sidebar-accent/50"
           }`}
@@ -157,7 +157,7 @@ export default function AdminPage() {
         </Link>
         <button className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-sidebar-foreground hover:bg-sidebar-accent/50 transition-colors">
           <Settings className="h-4 w-4" />
-          Configuracoes
+          Configurações
         </button>
         <button className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-sm text-destructive hover:bg-destructive/10 transition-colors">
           <LogOut className="h-4 w-4" />
@@ -251,7 +251,7 @@ export default function AdminPage() {
                       <Star className="h-6 w-6 text-green-500" />
                     </div>
                     <div>
-                      <p className="text-2xl font-bold text-foreground">{estatisticas.avaliacoesHoje}</p>
+                      <p className="text-2xl font-bold text-foreground">{estatisticas.avaliaçõesHoje}</p>
                       <p className="text-sm text-muted-foreground">Avaliacoes hoje</p>
                     </div>
                   </CardContent>
@@ -481,7 +481,7 @@ export default function AdminPage() {
             </div>
           )}
 
-          {activeTab === "avaliacoes" && (
+          {activeTab === "avaliações" && (
             <div className="space-y-6">
               <Card>
                 <CardHeader>
@@ -501,7 +501,7 @@ export default function AdminPage() {
                       </TableRow>
                     </TableHeader>
                     <TableBody>
-                      {avaliacoesRecentes.map((avaliacao) => (
+                      {avaliaçõesRecentes.map((avaliacao) => (
                         <TableRow key={avaliacao.id}>
                           <TableCell className="font-medium">{avaliacao.prestador}</TableCell>
                           <TableCell>{avaliacao.usuario}</TableCell>
