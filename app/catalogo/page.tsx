@@ -35,6 +35,8 @@ const categorias = [
   { id: "lanches", nome: "Lanches", icone: Pizza },
   { id: "bebidas", nome: "Cafe e Bebidas", icone: Coffee },
   { id: "fitness", nome: "Fitness", icone: Heart },
+  { id: "sobremesas", nome: "Doces e Sobremesas", icone: Cake },
+  { id: "drinks", nome: "Drinks Artesanais", icone: Coffee },
 ]
 
 const cidades = [
@@ -59,6 +61,9 @@ const prestadores = [
     descricao: "Bolos decorados, cupcakes e doces finos para festas e eventos especiais. Trabalhamos com encomendas personalizadas.",
     especialidades: ["Bolos Decorados", "Cupcakes", "Doces Finos"],
     verificado: true,
+    foto: "https://images.unsplash.com/photo-1541519227354-08fa5d50c44d?w=800&auto=format&fit=crop",
+    foto: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&auto=format&fit=crop",
+    foto: "https://images.unsplash.com/photo-1551024601-bec78aea704b?w=800&auto=format&fit=crop",
   },
   {
     id: 2,

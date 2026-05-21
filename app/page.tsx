@@ -68,7 +68,7 @@ const prestadoresDestaque = [
 const estatisticas = [
   { numero: "500+", label: "Prestadores Cadastrados", icone: ChefHat },
   { numero: "10k+", label: "Clientes Satisfeitos", icone: Users },
-  { numero: "4.8", label: "Avaliacao Media", icone: Star },
+  { numero: "4.8", label: "Avaliação Media", icone: Star },
   { numero: "15+", label: "Cidades Atendidas", icone: MapPin },
 ]
 
@@ -90,12 +90,12 @@ export default function HomePage() {
               <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl text-balance">
                 Descubra o melhor da{" "}
                 <span className="text-primary">comida local</span>{" "}
-                perto de voce
+                perto de você
               </h1>
               
               <p className="mb-10 text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto text-pretty">
-                O Divulgai conecta voce a cozinheiros autonomos e pequenos empreendedores 
-                do ramo alimenticio da sua regiao. Bolos, salgados, marmitas e muito mais.
+                O Divulgai conecta você a cozinheiros autonomos e pequenos empreendedores 
+                do ramo alimentício da sua região. Bolos, salgados, marmitas e muito mais.
               </p>
 
               {/* Search Bar */}
@@ -106,7 +106,7 @@ export default function HomePage() {
                       <div className="relative flex-1">
                         <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                         <Input 
-                          placeholder="O que voce procura?" 
+                          placeholder="O que você procura?" 
                           className="h-12 pl-10 border-0 bg-muted/50 focus-visible:ring-0 focus-visible:ring-offset-0"
                         />
                       </div>
@@ -142,7 +142,7 @@ export default function HomePage() {
                 Explore por Categorias
               </h2>
               <p className="text-muted-foreground max-w-xl mx-auto">
-                Encontre exatamente o que voce procura navegando pelas nossas categorias
+                Encontre exatamente o que você procura navegando pelas nossas categorias
               </p>
             </div>
 
@@ -274,7 +274,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="mb-3 text-xl font-semibold text-foreground">2. Escolha</h3>
                 <p className="text-muted-foreground">
-                  Compare perfis, veja avaliacoes e escolha o prestador ideal para sua necessidade.
+                  Compare perfis, veja avaliações e escolha o prestador ideal para sua necessidade.
                 </p>
               </div>
               <div className="text-center">
@@ -297,10 +297,10 @@ export default function HomePage() {
               <CardContent className="flex flex-col items-center gap-8 p-8 md:flex-row md:p-12 lg:p-16">
                 <div className="flex-1 text-center md:text-left">
                   <h2 className="mb-4 text-3xl font-bold text-primary-foreground lg:text-4xl text-balance">
-                    Voce e um prestador de servicos alimenticios?
+                    Voce e um prestador de serviços alimentícios?
                   </h2>
                   <p className="mb-6 text-primary-foreground/90 text-lg">
-                    Cadastre-se no Divulgai e alcance mais clientes na sua regiao. 
+                    Cadastre-se no Divulgai e alcance mais clientes na sua região. 
                     E gratis e facil!
                   </p>
                   <div className="flex flex-col gap-4 sm:flex-row sm:justify-center md:justify-start">

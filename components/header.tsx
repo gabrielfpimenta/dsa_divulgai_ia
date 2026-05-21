@@ -24,7 +24,7 @@ export function Header() {
             href="/" 
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            Inicio
+            Início
           </Link>
           <Link 
             href="/catalogo" 
@@ -36,7 +36,7 @@ export function Header() {
             href="/sobre" 
             className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
-            Sobre
+            Sobre nós
           </Link>
           <Link 
             href="/contato" 
@@ -79,7 +79,7 @@ export function Header() {
               className="rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Inicio
+              Início
             </Link>
             <Link 
               href="/catalogo" 
@@ -93,7 +93,7 @@ export function Header() {
               className="rounded-lg px-4 py-2 text-sm font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Sobre
+              Sobre nós
             </Link>
             <Link 
               href="/contato" 
