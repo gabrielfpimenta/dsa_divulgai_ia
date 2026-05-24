@@ -1,0 +1,15 @@
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+import { CheckCircle2, Handshake, HeartHandshake, Target, Users } from "lucide-react"
+
+const valores = [
+  { titulo: "Comunidade em primeiro lugar", descricao: "Fortalecemos empreendedores locais para que mais famílias possam viver do próprio talento.", icone: Users },
+  { titulo: "Confiança e transparência", descricao: "Perfis completos, avaliações reais e informações claras para uma escolha segura.", icone: CheckCircle2 },
+  { titulo: "Parceria de verdade", descricao: "Apoiamos prestadores e clientes durante toda a jornada, do primeiro contato à entrega.", icone: Handshake },
+]
+
+export default function SobrePage() {
+  return <div className="flex min-h-screen flex-col"><Header /><main className="flex-1"><section className="bg-gradient-to-b from-primary/10 via-background to-background py-16 lg:py-24"><div className="container mx-auto px-4"><div className="mx-auto max-w-3xl text-center"><Badge variant="secondary" className="mb-4">Sobre o Divulgai</Badge><h1 className="mb-4 text-4xl font-bold tracking-tight sm:text-5xl">Conectando pessoas ao melhor da comida local</h1><p className="text-lg text-muted-foreground">O Divulgai nasceu para aproximar consumidores de cozinheiros autônomos e pequenos negócios alimentícios da região. Aqui, quem prepara com carinho ganha visibilidade e quem compra encontra qualidade, praticidade e sabor.</p></div></div></section><section className="py-12 lg:py-16"><div className="container mx-auto grid gap-6 px-4 md:grid-cols-3">{valores.map((valor) => <Card key={valor.titulo}><CardHeader><div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-lg bg-primary/15 text-primary"><valor.icone className="h-5 w-5" /></div><CardTitle className="text-xl">{valor.titulo}</CardTitle></CardHeader><CardContent><p className="text-muted-foreground">{valor.descricao}</p></CardContent></Card>)}</div></section><section className="pb-16 lg:pb-24"><div className="container mx-auto grid gap-6 px-4 lg:grid-cols-2"><Card><CardHeader><CardTitle className="flex items-center gap-2 text-2xl"><Target className="h-6 w-6 text-primary" /> Nossa missão</CardTitle></CardHeader><CardContent className="text-muted-foreground">Ser a principal vitrine digital de serviços alimentícios locais, valorizando o trabalho artesanal e criando oportunidades reais de crescimento para pequenos empreendedores.</CardContent></Card><Card><CardHeader><CardTitle className="flex items-center gap-2 text-2xl"><HeartHandshake className="h-6 w-6 text-primary" /> Nosso compromisso</CardTitle></CardHeader><CardContent className="text-muted-foreground">Oferecer uma experiência simples, segura e acolhedora — tanto para quem vende quanto para quem compra — com foco em qualidade, atendimento e impacto positivo na comunidade.</CardContent></Card></div></section></main><Footer /></div>
+}
