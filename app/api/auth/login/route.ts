@@ -1,3 +1,7 @@
+export const runtime = "nodejs";
+
+import Database from "better-sqlite3";
+
 import { NextResponse } from 'next/server'
 import { db } from '@/lib/db'
 import { createSession, verifyPassword } from '@/lib/auth'
