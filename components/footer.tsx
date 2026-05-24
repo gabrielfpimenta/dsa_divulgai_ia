@@ -33,11 +33,6 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/como-funciona" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-                  Como Funciona
-                </Link>
-              </li>
-              <li>
                 <Link href="/sobre" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                   Sobre Nos
                 </Link>
@@ -57,11 +52,6 @@ export function Footer() {
               <li>
                 <Link href="/app" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
                   Baixe o App
-                </Link>
-              </li>
-              <li>
-                <Link href="/ajuda/prestador" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
-                  Central de Ajuda
                 </Link>
               </li>
             </ul>
